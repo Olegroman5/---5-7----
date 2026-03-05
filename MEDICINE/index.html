@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Медицина - Цифровая платформа для вашего здоровья</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo" onclick="scrollToTop()">
+                <i class="fas fa-laptop-medical"></i>
+                <span>E-Медицина</span>
+            </a>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home-services" class="nav-link active">Услуги</a></li>
+                    <li><a href="#doctors" class="nav-link">Специалисты</a></li>
+                    <li><a href="#appointment" class="nav-link">Онлайн-запись</a></li>
+                    <li><a href="#testimonials-contacts" class="nav-link">Контакты</a></li>
+                    <li><a href="#" class="login-btn"><i class="fas fa-user"></i> Личный кабинет</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Контейнер для контента -->
+    <div class="main-content">
+        <!-- Главная и Услуги -->
+        <section id="home-services" class="page-section active">
+            <div class="hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1>Цифровое здравоохранение нового поколения</h1>
+                        <p class="hero-subtitle">Получите медицинскую помощь в цифровом формате. Телемедицина, онлайн-консультации, электронные рецепты и результаты анализов - все в одном приложении.</p>
+
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-number">24/7</span>
+                                <span class="stat-text">Поддержка</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">100+</span>
+                                <span class="stat-text">Специалистов</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">10мин</span>
+                                <span class="stat-text">Среднее время ответа</span>
+                            </div>
+                        </div>
+
+                        <div class="hero-buttons">
+                            <a href="#appointment" class="btn btn-primary scroll-link">Записаться на онлайн-консультацию <i class="fas fa-arrow-right"></i></a>
+                            <a href="#doctors" class="btn btn-secondary scroll-link">Выбрать специалиста</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="section-title">
+                    <h2>Наши цифровые сервисы</h2>
+                    <p>Современные технологии для вашего здоровья и удобства.</p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Телемедицина</h3>
+                            <p>Консультации врачей через видеосвязь. Диагностика, лечение и наблюдение онлайн.</p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> Видеоконсультации</li>
+                                <li><i class="fas fa-check"></i> Дистанционная диагностика</li>
+                                <li><i class="fas fa-check"></i> Электронные рецепты</li>
+                                <li><i class="fas fa-check"></i> Наблюдение онлайн</li>
+                            </ul>
+                            <a href="#appointment" class="btn btn-outline scroll-link">Начать консультацию</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Мобильное приложение</h3>
+                            <p>Все медицинские сервисы в вашем смартфоне. Управляйте здоровьем в любое время.</p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> Электронная карта</li>
+                                <li><i class="fas fa-check"></i> Чат с врачом 24/7</li>
+                                <li><i class="fas fa-check"></i> Уведомления о приемах</li>
+                                <li><i class="fas fa-check"></i> Онлайн-платежи</li>
+                            </ul>
+                            <a href="#appointment" class="btn btn-outline scroll-link">Скачать приложение</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-file-medical-alt"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Электронные документы</h3>
+                            <p>Оформление медицинских документов в цифровом формате без посещения клиник.</p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> Электронные справки</li>
+                                <li><i class="fas fa-check"></i> Больничные листы</li>
+                                <li><i class="fas fa-check"></i> Результаты анализов</li>
+                                <li><i class="fas fa-check"></i> Направления и выписки</li>
+                            </ul>
+                            <a href="#appointment" class="btn btn-outline scroll-link">Оформить документы</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Врачи -->
+    <section id="doctors" class="page-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Наши специалисты</h2>
+            <p>Профессионалы с опытом работу в цифровой медицине и традиционном здравоохранении.</p>
+        </div>
+
+        <div class="doctors-grid">
+            <!-- Карточка первого врача -->
+            <div class="doctor-card">
+                <div class="doctor-img">
+                    <!-- Основное изображение -->
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+                         alt="Петрова Елена Сергеевна - врач-терапевт"
+                         loading="lazy"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="img-placeholder">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <div class="doctor-badge">Терапевт</div>
+                </div>
+                <div class="doctor-info">
+                    <h3>Петрова Елена Сергеевна</h3>
+                    <p class="doctor-specialty">Врач-терапевт, эксперт по телемедицине</p>
+                    <div class="doctor-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span class="rating-value">4.7</span>
+                    </div>
+                    <p class="doctor-exp">Опыт в телемедицине: 5 лет</p>
+                    <div class="doctor-actions">
+                        <a href="#appointment" class="btn btn-small scroll-link">Онлайн-консультация</a>
+                        <button class="btn-text">Профиль</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка второго врача -->
+            <div class="doctor-card">
+                <div class="doctor-img">
+                    <!-- Основное изображение -->
+                    <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+                         alt="Смирнов Алексей Владимирович - кардиолог"
+                         loading="lazy"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="img-placeholder">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <div class="doctor-badge">Кардиолог</div>
+                </div>
+                <div class="doctor-info">
+                    <h3>Смирнов Алексей Владимирович</h3>
+                    <p class="doctor-specialty">Кардиолог, к.м.н., цифровая кардиология</p>
+                    <div class="doctor-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="rating-value">5.0</span>
+                    </div>
+                    <p class="doctor-exp">Цифровая диагностика: 4 года</p>
+                    <div class="doctor-actions">
+                        <a href="#appointment" class="btn btn-small scroll-link">Записаться</a>
+                        <button class="btn-text">Профиль</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Запись онлайн -->
+        <section id="appointment" class="page-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Онлайн-запись на консультацию</h2>
+                    <p>Выберите удобный формат и время. Специалист свяжется с вами для подтверждения записи.</p>
+                </div>
+
+                <div class="appointment-container">
+                    <div class="appointment-info">
+                        <div class="appointment-features">
+                            <div class="feature">
+                                <i class="fas fa-video"></i>
+                                <div>
+                                    <h4>Видеоконсультация</h4>
+                                    <p>Общение со специалистом через защищенный видеоканал</p>
+                                </div>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-comments"></i>
+                                <div>
+                                    <h4>Чат с врачом</h4>
+                                    <p>Текстовые консультации в режиме реального времени</p>
+                                </div>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-phone-alt"></i>
+                                <div>
+                                    <h4>Телефонная консультация</h4>
+                                    <p>Консультация по телефону в удобное для вас время</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="appointment-form-container">
+                        <form class="appointment-form">
+                            <h3>Записаться на онлайн-консультацию</h3>
+
+                            <div class="form-group">
+                                <label for="name">ФИО *</label>
+                                <input type="text" id="name" placeholder="Иванов Иван Иванович" required>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone">Телефон *</label>
+                                    <input type="tel" id="phone" placeholder="+7 (999) 123-45-67" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" placeholder="example@email.com" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="consult-type">Формат консультации *</label>
+                                    <select id="consult-type" required>
+                                        <option value="" disabled selected>Выберите формат</option>
+                                        <option value="video">Видеоконсультация</option>
+                                        <option value="chat">Чат с врачом</option>
+                                        <option value="phone">Телефонная консультация</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="date">Желаемая дата *</label>
+                                    <input type="date" id="date" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="specialty">Специализация *</label>
+                                <select id="specialty" required>
+                                    <option value="" disabled selected>Выберите специалиста</option>
+                                    <option value="therapist">Терапевт</option>
+                                    <option value="cardiologist">Кардиолог</option>
+                                    <option value="neurologist">Невролог</option>
+                                    <option value="pediatrician">Педиатр</option>
+                                    <option value="endocrinologist">Эндокринолог</option>
+                                    <option value="gastroenterologist">Гастроэнтеролог</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Краткое описание проблемы</label>
+                                <textarea id="message" placeholder="Опишите симптомы или причину обращения..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary submit-btn">Отправить заявку <i class="fas fa-paper-plane"></i></button>
+                            <p class="form-note">Нажимая кнопку, вы соглашаетесь с <a href="#">политикой обработки персональных данных</a></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Отзывы и Контакты -->
+        <section id="testimonials-contacts" class="page-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Отзывы наших пациентов</h2>
+                    <p>Тысячи пациентов доверяют нам свое здоровье. Вот что они говорят о нашем сервисе.</p>
+                </div>
+
+                <div class="testimonials-contacts-container">
+                    <div class="testimonials-section">
+                        <div class="testimonials-slider">
+                            <div class="slider-container">
+                                <!-- Слайд 1 -->
+                                <div class="testimonial-slide active">
+                                    <div class="testimonial-content">
+                                        <div class="testimonial-text">
+                                            <i class="fas fa-quote-left quote-icon"></i>
+                                            <p>Использую E-Медицину уже больше года. Видеоконсультации избавили от необходимости ездить в клинику. Врачи очень внимательные, назначают адекватное лечение. Особенно нравится функция чата с врачом - всегда можно задать вопрос.</p>
+                                            <i class="fas fa-quote-right quote-icon"></i>
+                                        </div>
+                                        <div class="testimonial-author">
+                                            <div class="author-img">
+                                                <i class="fas fa-user-tie"></i>
+                                            </div>
+                                            <div class="author-info">
+                                                <h4>Дмитрий Волков</h4>
+                                                <p>IT-специалист, 34 года</p>
+                                                <div class="author-rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Слайд 2 -->
+                                <div class="testimonial-slide">
+                                    <div class="testimonial-content">
+                                        <div class="testimonial-text">
+                                            <i class="fas fa-quote-left quote-icon"></i>
+                                            <p>Как маме двоих детей очень удобно получать консультации онлайн. Не нужно вести детей в поликлинику. Врачи внимательные, назначают лечение, выписывают электронные рецепты. Оформление справок в садик занимает 10 минут вместо 2 часов!</p>
+                                            <i class="fas fa-quote-right quote-icon"></i>
+                                        </div>
+                                        <div class="testimonial-author">
+                                            <div class="author-img">
+                                                <i class="fas fa-user-graduate"></i>
+                                            </div>
+                                            <div class="author-info">
+                                                <h4>Елена Петрова</h4>
+                                                <p>Преподаватель, мама двоих детей</p>
+                                                <div class="author-rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Индикаторы слайдов -->
+                            <div class="slider-indicators">
+                                <button class="indicator active" data-slide="0"></button>
+                                <button class="indicator" data-slide="1"></button>
+                            </div>
+
+                            <!-- Кнопки навигации -->
+                            <button class="slider-btn prev-btn">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="slider-btn next-btn">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="contacts-section">
+                        <div class="section-title" style="text-align: left; margin-bottom: 30px;">
+                            <h2>Контакты</h2>
+                            <p>Свяжитесь с нами удобным для вас способом.</p>
+                        </div>
+
+                        <div class="contact-info">
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Центральный офис</h3>
+                                    <p>г. Москва, ул. Цифровая, д. 8</p>
+                                    <p>Бизнес-центр "Технопарк"</p>
+                                    <p class="contact-note">Метро: "Технологическая"</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Телефоны</h3>
+                                    <p>+7 (800) 555-35-35</p>
+                                    <p>+7 (495) 765-43-21</p>
+                                    <p class="contact-note">Бесплатный звонок по России</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Электронная почта</h3>
+                                    <p>info@e-medicina.ru</p>
+                                    <p>support@e-medicina.ru</p>
+                                    <p class="contact-note">Ответ в течение 2 часов</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Режим работы</h3>
+                                    <p>Техподдержка: 24/7</p>
+                                    <p>Консультации: 8:00-22:00</p>
+                                    <p class="contact-note">Без выходных и праздников</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-info">
+                    <a href="#" class="logo" onclick="scrollToTop()">
+                        <i class="fas fa-laptop-medical"></i>
+                        <span>E-Медицина</span>
+                    </a>
+                    <p>Цифровая платформа для современного здравоохранения. Объединяем медицинскую экспертизу с технологиями будущего.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="#home-services" class="footer-link scroll-link">Услуги</a></li>
+                        <li><a href="#doctors" class="footer-link scroll-link">Специалисты</a></li>
+                        <li><a href="#appointment" class="footer-link scroll-link">Онлайн-запись</a></li>
+                        <li><a href="#testimonials-contacts" class="footer-link scroll-link">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Сервисы</h3>
+                    <ul>
+                        <li><a href="#home-services" class="scroll-link">Телемедицина</a></li>
+                        <li><a href="#home-services" class="scroll-link">Мобильное приложение</a></li>
+                        <li><a href="#home-services" class="scroll-link">Электронные документы</a></li>
+                        <li><a href="#appointment" class="scroll-link">Чат с врачом</a></li>
+                        <li><a href="#home-services" class="scroll-link">Онлайн-диагностика</a></li>
+                        <li><a href="#home-services" class="scroll-link">Электронная карта</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Свяжитесь с нами</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>г. Москва, ул. Цифровая, д. 8</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+7 (800) 555-35-35</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@e-medicina.ru</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Поддержка: 24/7, Консультации: 8:00-22:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2025 E-Медицина. Все права защищены.</p>
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Пользовательское соглашение</a>
+                    <a href="#">Лицензии и сертификаты</a>
+                    <a href="#">Голубков Олег</a>
+                    <a href="#">Группа: 831-74</a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Навигация по якорям
+        document.addEventListener('DOMContentLoaded', function() {
+            // Все ссылки для навигации
+            const navLinks = document.querySelectorAll('.nav-link, .scroll-link, .footer-link');
+            const sections = document.querySelectorAll('.page-section');
+            
+            // Функция для плавной прокрутки к элементу
+            function scrollToSection(elementId) {
+                const element = document.getElementById(elementId);
+                if (element) {
+                    const headerHeight = document.querySelector('header').offsetHeight;
+                    const elementPosition = element.offsetTop - headerHeight;
+                    
+                    window.scrollTo({
+                        top: elementPosition,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Обновляем активную ссылку в навигации
+                    updateActiveNavLink(elementId);
+                }
+            }
+            
+            // Функция обновления активной ссылки в навигации
+            function updateActiveNavLink(sectionId) {
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${sectionId}`) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+            
+            // Обработчики для навигационных ссылок
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    if (targetId) {
+                        scrollToSection(targetId);
+                    }
+                });
+            });
+            
+            // Обработчик для логотипа (прокрутка наверх)
+            function scrollToTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+                
+                // Обновляем активную ссылку
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.classList.remove('active');
+                });
+                document.querySelector('.nav-link[href="#home-services"]').classList.add('active');
+            }
+            
+            // Наблюдатель за скроллом для обновления активной ссылки
+            function updateActiveLinkOnScroll() {
+                let currentSection = '';
+                const headerHeight = document.querySelector('header').offsetHeight;
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - headerHeight - 100;
+                    const sectionHeight = section.offsetHeight;
+                    
+                    if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+                        currentSection = section.getAttribute('id');
+                    }
+                });
+                
+                if (currentSection) {
+                    updateActiveNavLink(currentSection);
+                } else if (window.scrollY < 100) {
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    document.querySelector('.nav-link[href="#home-services"]').classList.add('active');
+                }
+            }
+            
+            // Инициализация наблюдателя за скроллом
+            window.addEventListener('scroll', updateActiveLinkOnScroll);
+            
+            // Мобильное меню
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const navLinksContainer = document.querySelector('.nav-links');
+            
+            if (mobileMenuBtn) {
+                mobileMenuBtn.addEventListener('click', function() {
+                    navLinksContainer.style.display = 
+                        navLinksContainer.style.display === 'flex' ? 'none' : 'flex';
+                    
+                    if (navLinksContainer.style.display === 'flex') {
+                        navLinksContainer.style.flexDirection = 'column';
+                        navLinksContainer.style.position = 'absolute';
+                        navLinksContainer.style.top = '100%';
+                        navLinksContainer.style.left = '0';
+                        navLinksContainer.style.right = '0';
+                        navLinksContainer.style.backgroundColor = 'white';
+                        navLinksContainer.style.padding = '20px';
+                        navLinksContainer.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
+                        navLinksContainer.style.gap = '15px';
+                    }
+                });
+            }
+            
+            // Слайдер отзывов
+            const slides = document.querySelectorAll('.testimonial-slide');
+            const indicators = document.querySelectorAll('.indicator');
+            const prevBtn = document.querySelector('.prev-btn');
+            const nextBtn = document.querySelector('.next-btn');
+            let currentSlide = 0;
+            let slideInterval;
+            
+            // Функция показа слайда
+            function showSlide(index) {
+                // Скрываем все слайды
+                slides.forEach(slide => {
+                    slide.classList.remove('active');
+                });
+                
+                // Убираем активный класс со всех индикаторов
+                indicators.forEach(indicator => {
+                    indicator.classList.remove('active');
+                });
+                
+                // Показываем текущий слайд и активируем соответствующий индикатор
+                slides[index].classList.add('active');
+                indicators[index].classList.add('active');
+                
+                currentSlide = index;
+            }
+            
+            // Функция следующего слайда
+            function nextSlide() {
+                let nextIndex = (currentSlide + 1) % slides.length;
+                showSlide(nextIndex);
+            }
+            
+            // Функция предыдущего слайда
+            function prevSlide() {
+                let prevIndex = (currentSlide - 1 + slides.length) % slides.length;
+                showSlide(prevIndex);
+            }
+            
+            // Автопереключение слайдов каждые 5 секунд
+            function startAutoSlide() {
+                slideInterval = setInterval(nextSlide, 5000);
+            }
+            
+            // Остановка автопереключения
+            function stopAutoSlide() {
+                clearInterval(slideInterval);
+            }
+            
+            // Назначаем обработчики событий
+            if (nextBtn && prevBtn) {
+                nextBtn.addEventListener('click', function() {
+                    nextSlide();
+                    stopAutoSlide();
+                    startAutoSlide();
+                });
+                
+                prevBtn.addEventListener('click', function() {
+                    prevSlide();
+                    stopAutoSlide();
+                    startAutoSlide();
+                });
+                
+                // Обработчики для индикаторов
+                indicators.forEach((indicator, index) => {
+                    indicator.addEventListener('click', function() {
+                        showSlide(index);
+                        stopAutoSlide();
+                        startAutoSlide();
+                    });
+                });
+                
+                // Останавливаем автопрокрутку при наведении на слайдер
+                const slider = document.querySelector('.testimonials-slider');
+                slider.addEventListener('mouseenter', stopAutoSlide);
+                slider.addEventListener('mouseleave', startAutoSlide);
+                
+                // Запускаем автопрокрутку при загрузке страницы
+                startAutoSlide();
+            }
+            
+            // Инициализация активной ссылки при загрузке
+            updateActiveLinkOnScroll();
+        });
+        
+        // Глобальная функция для прокрутки наверх
+        window.scrollToTop = function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+            
+            // Обновляем активную ссылку
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+            });
+            document.querySelector('.nav-link[href="#home-services"]').classList.add('active');
+        };
+    </script>
+</body>
+</html>
